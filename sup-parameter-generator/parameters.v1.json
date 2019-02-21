@@ -1,0 +1,74 @@
+{
+  "parameters": [
+    {
+      "name": "logger.local.level",
+      "path": [
+        {
+          "name": "++++++++++++++++++   VERSION",
+          "value": "++++++++++++++++++   false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "DEBUG"
+      ]
+    },
+    {
+      "name": "logger.filter.denyLogger",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ru.sbrf.ufs.platform.core.listener.CustomServletRequestListener"
+      ]
+    }
+  ]
+}
+integration.serviceStateExecutor.corePoolSize 5
+integration.serviceStateExecutor.maxPoolSize 15
+integration.serviceStateExecutor.queueCapacity 200
+integration.services.EFS.SrvSupResetLocalCacheMQTopic.001.correlationType MESSAGE_TO_CORRELATION_ID

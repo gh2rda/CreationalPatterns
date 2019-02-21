@@ -1,0 +1,72 @@
+{
+  "parameters" : [ {
+    "name" : "logger.local.level",
+    "path" : [ {
+      "name" : "================= VERSION",
+      "value" : "================= false"
+    }, {
+      "name" : "CHANNEL",
+      "value" : "${channel-code}"
+    }, {
+      "name" : "SUBSYSTEM",
+      "value" : "UFS_FRAUD"
+    }, {
+      "name" : "TERBANK",
+      "value" : null
+    }, {
+      "name" : "OSB",
+      "value" : null
+    }, {
+      "name" : "VSP",
+      "value" : null
+    } ],
+    "type" : "STRING",
+    "values" : [ "DEBUG" ]
+  }, {
+    "name" : "logger.filter.denyLogger",
+    "path" : [ {
+      "name" : "VERSION",
+      "value" : "false"
+    }, {
+      "name" : "CHANNEL",
+      "value" : "${channel-code}"
+    }, {
+      "name" : "SUBSYSTEM",
+      "value" : "UFS_FRAUD"
+    }, {
+      "name" : "TERBANK",
+      "value" : null
+    }, {
+      "name" : "OSB",
+      "value" : null
+    }, {
+      "name" : "VSP",
+      "value" : null
+    } ],
+    "type" : "STRING",
+    "values" : [ "ru.sbrf.ufs.platform.core.listener.CustomServletRequestListener" ]
+  }, {
+    "name" : "platform.audit.needValidate",
+    "path" : [ {
+      "name" : "VERSION",
+      "value" : "false"
+    }, {
+      "name" : "CHANNEL",
+      "value" : "${channel-code}"
+    }, {
+      "name" : "SUBSYSTEM",
+      "value" : "UFS_FRAUD"
+    }, {
+      "name" : "TERBANK",
+      "value" : null
+    }, {
+      "name" : "OSB",
+      "value" : null
+    }, {
+      "name" : "VSP",
+      "value" : null
+    } ],
+    "type" : "BOOLEAN",
+    "values" : [ "true" ]
+  } ]
+}
